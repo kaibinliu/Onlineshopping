@@ -43,7 +43,7 @@
     <div class="haomaTitle" id="hmtitle">
         购买人信息
         <%
-        try{int no=Integer.parseInt(request.getParameter("id"));
+        int no=Integer.parseInt(request.getParameter("id"));
         String name=request.getParameter("name");
         if(no==0||name==null)
         	response.sendRedirect("Show.jsp");
@@ -71,8 +71,6 @@
 <%}else {%>
 <h1>暂无意向购买人信息！</h1><br/>
 <a href="Show.jsp">返回</a><br/>
-<%}}catch(Exception e){
-	response.sendRedirect("Show.jsp");}} %>
-
+<%}} %>
 </body>
 </html>
