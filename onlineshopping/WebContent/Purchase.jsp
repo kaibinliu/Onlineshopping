@@ -1,7 +1,7 @@
-<%@page import="save.data.Seller"%>
+<%@page import="model.Seller"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="save.data.Purchase"%>
-<%@page import="dao.PurchaseDao"%>
+<%@page import="model.Purchase"%>
+<%@page import="model.PurchaseDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

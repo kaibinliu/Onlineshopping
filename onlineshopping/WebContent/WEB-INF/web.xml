@@ -9,11 +9,22 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  	<!-- 使用默认servlet处理静态资源请求 --> 
+	<!--后缀名为css/gif/jps/png/js的静态资源不拦截-->
+	<servlet-mapping>
+	 	<servlet-name>default</servlet-name>
+	 	<url-pattern>*.css</url-pattern>
+	 	<url-pattern>*.js</url-pattern>
+	 	<url-pattern>*.png</url-pattern>
+	 	<url-pattern>*.gif</url-pattern>
+	 	<url-pattern>*.jpg</url-pattern>	
+	 	<url-pattern>*.jpeg</url-pattern>	
+	</servlet-mapping>
   <servlet>
     <description></description>
     <display-name>SellerRegisterServlet</display-name>
     <servlet-name>SellerRegisterServlet</servlet-name>
-    <servlet-class>handle.data.SellerRegisterServlet</servlet-class>
+    <servlet-class>controller.SellerRegisterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SellerRegisterServlet</servlet-name>
@@ -23,7 +34,7 @@
     <description></description>
     <display-name>sellerlogin_handle</display-name>
     <servlet-name>sellerlogin_handle</servlet-name>
-    <servlet-class>handle.data.sellerlogin_handle</servlet-class>
+    <servlet-class>controller.sellerlogin_handle</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>sellerlogin_handle</servlet-name>
@@ -34,28 +45,28 @@
 		</description>
 		<display-name>UploadServlet</display-name>
 		<servlet-name>UploadServlet</servlet-name>
-		<servlet-class>handle.data.UploadServlet</servlet-class>
+		<servlet-class>controller.UploadServlet</servlet-class>
 	</servlet>
 	<servlet>
 		<description>
 		</description>
 		<display-name>Freeze</display-name>
 		<servlet-name>Freeze</servlet-name>
-		<servlet-class>handle.data.Freeze</servlet-class>
+		<servlet-class>controller.Freeze</servlet-class>
 	</servlet>
 	<servlet>
 		<description>
 		</description>
 		<display-name>FailedDeal</display-name>
 		<servlet-name>FailedDeal</servlet-name>
-		<servlet-class>handle.data.FailedDeal</servlet-class>
+		<servlet-class>controller.FailedDeal</servlet-class>
 	</servlet>
 	<servlet>
 		<description>
 		</description>
 		<display-name>SuccessDeal</display-name>
 		<servlet-name>SuccessDeal</servlet-name>
-		<servlet-class>handle.data.SuccessDeal</servlet-class>
+		<servlet-class>controller.SuccessDeal</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
@@ -79,7 +90,7 @@
 		</description>
 		<display-name>userinfo</display-name>
 		<servlet-name>userinfo</servlet-name>
-		<servlet-class>handle.data.userinfo</servlet-class>
+		<servlet-class>controller.userinfo</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>userinfo</servlet-name>
@@ -87,10 +98,11 @@
 	</servlet-mapping>
 	<servlet>
 	<servlet-name>HandlePassword</servlet-name>
-	<servlet-class>handle.data.HandlePassword</servlet-class>
+	<servlet-class>controller.HandlePassword</servlet-class>
 	</servlet>
 	<servlet-mapping>
 	<servlet-name>HandlePassword</servlet-name>
 	<url-pattern>/HandlePassword</url-pattern>
 	</servlet-mapping>
+	
 </web-app>

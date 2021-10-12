@@ -1,4 +1,4 @@
-<%@page import="save.data.Seller"%>
+<%@page import="model.Seller"%>
 <%@ page contentType="text/html;charset=GB2312" %>
 <%@page language="java" import="java.util.*" import="javax.servlet.http.*"%>
 <HTML>

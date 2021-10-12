@@ -1,8 +1,8 @@
-<%@page import="save.data.Seller"%>
+<%@page import="model.Seller"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.ResultSet"%>
-<%@page import="dao.GoodDao"%>
-<%@page import="save.data.Good"%>
+<%@page import="model.GoodDao"%>
+<%@page import="model.Good"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

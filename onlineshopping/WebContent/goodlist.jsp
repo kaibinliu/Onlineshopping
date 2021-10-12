@@ -1,4 +1,4 @@
-<%@page import="save.data.Good1"%>
+<%@page import="model.Good1"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
