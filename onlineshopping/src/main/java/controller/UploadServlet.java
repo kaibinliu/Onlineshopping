@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class UploadServlet
  */
-@MultipartConfig(location = "E:/Eclipse/Eclipse_workplace/onlineshopping/onlineshopping/WebContent/img")
+@MultipartConfig(location = "E:\\Eclipse\\Eclipse_workplace\\onlineshopping\\WebContent\\img")
 public class UploadServlet extends HttpServlet {
 
 	/**
@@ -39,7 +39,7 @@ public class UploadServlet extends HttpServlet {
 		String ima_add=""; 
 		Good good=new Good();
 		request.setCharacterEncoding("utf-8");
-		String basePath = "E:/Eclipse/Eclipse_workplace/onlineshopping/onlineshopping/WebContent/img";
+		String basePath = "E:\\Eclipse\\Eclipse_workplace\\onlineshopping\\WebContent\\img";
 		// ��ȡ�����ϴ��ļ���Ϣ����д�������
 		Collection<Part> parts = request.getParts();
 		for (Part part : parts) {

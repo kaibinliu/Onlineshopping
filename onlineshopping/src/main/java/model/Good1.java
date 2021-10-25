@@ -8,8 +8,21 @@ public class Good1 {
     private double GPrice;
     private int GStock;
     private String GState;
-    
-    public int getGNo() {
+	public Good1() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Good1(int gNo, String gName, String gDescribe, String gPicture, double gPrice, int gStock, String gState) {
+		super();
+		GNo = gNo;
+		GName = gName;
+		GDescribe = gDescribe;
+		GPicture = gPicture;
+		GPrice = gPrice;
+		GStock = gStock;
+		GState = gState;
+	}
+	public int getGNo() {
 		return GNo;
 	}
 	public void setGNo(int gNo) {
@@ -51,19 +64,6 @@ public class Good1 {
 	public void setGState(String gState) {
 		GState = gState;
 	}
-	public Good1() {
-		super();
-		// TODO 自动生成的构造函数存根
-	}
-	public Good1(int gNo, String gName, String gDescribe, String gPicture, double gPrice, int gStock, String gState) {
-		super();
-		GNo = gNo;
-		GName = gName;
-		GDescribe = gDescribe;
-		GPicture = gPicture;
-		GPrice = gPrice;
-		GStock = gStock;
-		GState = gState;
-	}
-
+	
+    
 }
